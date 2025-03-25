@@ -12,5 +12,5 @@ export const createAnecdote = async(newAnecdote)=> {
 
 export const updateAnecdote = async(updatedAnecdote) => {
   const res =await axios.put(`${baseUrl}/${updatedAnecdote.id}`,updatedAnecdote)
-  return res.date
+  return res.data
 }
